@@ -1,0 +1,55 @@
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+.list_carousel{
+    background-color:#ccc;
+    width: 200px;
+    overflow: hidden;
+    border-right: solid red;
+}
+[id^="foo"], .trash1 {
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    opacity:0;  /* make things invisible upon start */
+    animation:fadeIn ease-in 1;
+    animation-duration: 2s;
+    animation-fill-mode:forwards;
+}
+#custom {
+    float: right;
+}
+[id^="foo"] {
+    width : 3000px;
+    height : 150px;
+    left: 0px;
+    position: relative;
+    border: 5px solid red;
+    animation-delay: 1.5s;
+}
+.event { 
+    display: inline-block;
+    margin-right: 5px;
+    width:70px;
+    height:150px;
+    text-align:center;
+    background-image: url('http://comm.soc.northwestern.edu/mscblog/files/2013/03/movie_night.jpg');
+    background-size: 70px 150px;
+    opacity:0;  /* make things invisible upon start */
+    animation:fadeIn ease-in 1;
+    animation-duration: 2s;
+    animation-fill-mode:forwards;
+}
+.event + .event {
+    margin-left: 5px;
+    margin-right: 10px;
+    
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+.trash1 {
+    background-color: white;
+    height: 150px;
+    width: 200px;
+    animation-delay: 0.75s;
+}
